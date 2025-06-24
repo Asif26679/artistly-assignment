@@ -10,7 +10,6 @@ import {
 } from "@heroicons/react/24/outline";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="absolute top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-md text-white">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-8 py-4">
@@ -19,7 +18,6 @@ export default function Navbar() {
           <Squares2X2Icon className="w-6 h-6 text-purple-500" />
           Artistly
         </Link>
-
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8 text-sm font-medium">
           <Link href="/artist" className="hover:text-purple-400 flex items-center gap-1">
@@ -35,7 +33,6 @@ export default function Navbar() {
             Dashboard
           </Link>
         </div>
-
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -43,8 +40,7 @@ export default function Navbar() {
         >
           {isOpen ? <XMarkIcon className="w-7 h-7" /> : <Bars3Icon className="w-7 h-7" />}
         </button>
-      </div>
-
+      </div> 
       {/* Mobile Dropdown */}
       <div
         className={`md:hidden px-6 pt-2 pb-4 space-y-3 transition-all duration-300 ${
@@ -72,7 +68,6 @@ export default function Navbar() {
         >
            Dashboard
         </Link>
-       
       </div>
     </nav>
   );

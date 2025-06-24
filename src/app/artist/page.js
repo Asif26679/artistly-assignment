@@ -2,8 +2,6 @@
 import { useState, useEffect } from "react";
 import ArtistCard from "../components/ArtistCard";
 import PageWrapper from "../components/pageWrapper";
-
-// Dummy data
 const artistData = [
   {
     name: "Arjit",
@@ -152,7 +150,6 @@ export default function ArtistListingPage() {
             <option value="₹50000+">₹50K+</option>
           </select>
         </div>
-
         {/* Reset Filters Button */}
         <div className="mb-12 text-right">
           <button
