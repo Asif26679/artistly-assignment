@@ -38,7 +38,7 @@ export default function ManagerDashboard() {
 
   return (
     <PageWrapper>
-      <main className="max-w-6xl mx-auto px-6 py-16 text-white">
+      <main className="max-w-6xl mx-auto px-6 py-16 text-black">
         <h1 className="text-3xl font-bold mb-8 text-purple-400">Manager Dashboard</h1>
 
         <div className="overflow-x-auto bg-white/5 border border-white/10 rounded-xl shadow-md">
